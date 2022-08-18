@@ -271,7 +271,9 @@ a:hover {
 #bloc-1-hero h1 {
   font-size: 32px;
 }
-
+.col-sm-12 img {
+  width: 100px;
+}
 .navbar {
   margin-bottom: 0;
   z-index: 1;
@@ -287,6 +289,7 @@ a:hover {
 }
 
 .navbar-brand img {
+  height: 40px;
   max-height: 200px;
   margin: 0 5px 0 0;
   display: inline;
@@ -808,13 +811,16 @@ h4 {
 }
 
 .bg-banniere {
-  background-image: url("img/agence-la-panthere.jpg");
+  background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.png");
+  background-image: url("img/image-de-presentation.webp");
 }
-
+.col-sm-6 img {
+  height: 280px;
+  width: 100%;
+}
 @media (max-width: 1024px) {
   .bloc {
     padding-left: 20px;
@@ -1022,6 +1028,10 @@ h4 {
   }
   .social {
     flex-direction: column;
+  }
+  .col-sm-6 img {
+    height: 100%;
+    width: 350px;
   }
 }
 
