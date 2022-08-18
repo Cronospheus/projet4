@@ -178,11 +178,6 @@ a:hover {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.d-bloc .panel,
-.l-bloc {
-  color: rgba(0, 0, 0, 0.5);
-}
-
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
   color: rgba(0, 0, 0, 0.7);
@@ -567,12 +562,12 @@ a[data-lightbox]:hover img {
   max-height: 90vh;
   margin: 0 auto;
 }
-
+.icon-md {
+}
 .lightbox-caption {
   padding: 20px;
+  text-align: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
   left: 15px;
   right: 15px;
   bottom: 5px;
@@ -627,7 +622,6 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .lightbox-caption {
   padding: 0;
-  color: rgba(0, 0, 0, 0.5);
   background: none;
 }
 
@@ -643,7 +637,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #000000 !important;
 }
 
 .container {
@@ -692,10 +686,14 @@ p {
 }
 
 .social {
-  max-width: 400px;
-  margin: auto auto auto auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
-
+.icon-md {
+  padding-right: 10px;
+  font-size: 10px;
+}
 h2 {
   font-size: 22px;
   line-height: 1.4em;
@@ -814,7 +812,7 @@ h4 {
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img/image-de-presentation.png");
 }
 
 @media (max-width: 1024px) {
@@ -987,6 +985,10 @@ h4 {
     padding-left: 0;
     padding-right: 0;
   }
+  .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .a-block {
     padding: 0 10px;
   }
@@ -1017,6 +1019,9 @@ h4 {
   .blocsapp-device-iphone5 img {
     width: 180px;
     height: 320px;
+  }
+  .social {
+    flex-direction: column;
   }
 }
 
