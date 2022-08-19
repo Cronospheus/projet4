@@ -506,7 +506,6 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -1030,9 +1029,7 @@ h4 {
     width: 180px;
     height: 320px;
   }
-  .social {
-    flex-direction: column;
-  }
+
   .col-sm-6 img {
     height: 100%;
     width: 350px;
