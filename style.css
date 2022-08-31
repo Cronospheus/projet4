@@ -103,7 +103,15 @@ a:hover {
 .d-bloc .divider-h span {
   border-color: rgba(255, 255, 255, 0.2);
 }
-
+.bloc-bg-texture::before {
+  content: "";
+  background-size: 2px 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
@@ -446,7 +454,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(127, 208, 214);
 }
 
 .btn-rd {
@@ -657,7 +665,7 @@ a {
   text-align: center;
   font-weight: lighter;
   max-width: 520px;
-  margin: auto auto auto auto;
+  margin: auto;
 }
 
 p {
@@ -666,7 +674,7 @@ p {
 
 .tight-width-whitespace {
   max-width: 600px;
-  margin: auto auto auto auto;
+  margin: auto;
 }
 
 .h1 {
@@ -694,6 +702,7 @@ p {
 }
 h2 {
   font-size: 22px;
+  margin: 0 30px;
   line-height: 1.4em;
 }
 
@@ -742,7 +751,7 @@ h4 {
 
 .black-background {
   background-color: rgba(165, 147, 99, 0.7);
-  padding: 40px 40px 40px 40px;
+  padding: 20px;
 }
 
 .bold-link {
@@ -805,8 +814,6 @@ h4 {
 
 .bg-presentation {
   background-image: url("img/image-de-presentation.webp");
-  height: 600px;
-  width: 100%;
 }
 .col-sm-6 img {
   height: 270px;
