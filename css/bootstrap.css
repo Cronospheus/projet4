@@ -8298,7 +8298,7 @@ button.close {
 
 @media print {
   .visible-print {
-    display: block !important;
+    display: block !important;=
   }
   table.visible-print {
     display: table !important;
